@@ -1,0 +1,29 @@
+import java.lang.Math.random
+class Articles {
+
+    var Article = arrayOf("Now or never", "Never look back", "Live without regrets",
+            "All we need in love","Never say never", "The best is yet to come",
+            "It’s so strange that autumn is so beautiful yet everything is dying")
+
+    fun letter(): Array<String> {
+        return Article
+    }
+
+    fun PrintLetter() {
+        println(Article)
+    }
+
+    fun random() {
+        var NewArticles = letter().random()
+        println(NewArticles)
+
+    }
+}
+fun buildLetter(){
+    var Build = Articles()
+    Build.PrintLetter()
+}
+fun main() {
+    buildLetter()
+    Articles().random()
+}
